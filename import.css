@@ -1,0 +1,69 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #1B1B1D; /* Dark background */
+    color: #FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Import Options Container */
+  .import-container {
+    text-align: center;
+    background-color: #2C2C2E;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  /* Title & Subtitle */
+  .import-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .import-subtitle {
+    font-size: 0.9rem;
+    color: #B2B2B2;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Buttons */
+  .import-button {
+    width: 100%;
+    background-color: #3A3A3C;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .import-button:hover {
+    background-color: #48484A;
+  }
+  
+  /* Icons */
+  .icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+.import-container a{
+    text-decoration: none;
+}  

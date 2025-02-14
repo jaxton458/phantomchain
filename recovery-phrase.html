@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recovery Phrase</title>
+    <link rel="stylesheet" href="recovery-phrase.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- <div class="header">
+            <span class="back-button">&larr;</span>
+            <span class="progress-bar"></span>
+            <span class="next-button">Next</span>
+        </div> -->
+
+        <h1>Recovery Phrase</h1>
+        <p class="description">This is the only way you will be able to recover your account. Please store it somewhere safe!</p>
+
+        <div class="phrase-container" id="phrase-container">
+            <div class="phrase"><span>1</span> chicken</div>
+            <div class="phrase"><span>2</span> provide</div>
+            <div class="phrase"><span>3</span> blur</div>
+            <div class="phrase"><span>4</span> finish</div>
+            <div class="phrase"><span>5</span> enlist</div>
+            <div class="phrase"><span>6</span> tribe</div>
+            <div class="phrase"><span>7</span> virtual</div>
+            <div class="phrase"><span>8</span> badge</div>
+            <div class="phrase"><span>9</span> taxi</div>
+            <div class="phrase"><span>10</span> glide</div>
+            <div class="phrase"><span>11</span> hip</div>
+            <div class="phrase"><span>12</span> cereal</div>
+        </div>
+
+        <button class="copy-btn" onclick="copyPhrases()">📋 Copy to clipboard</button>
+        
+         <a href="./homepage.html"><button class="primary-btn">OK, I saved it somewhere</button></a>
+    </div>
+
+    <script>
+        function copyPhrases() {
+            const phrases = Array.from(document.querySelectorAll(".phrase")).map(el => el.innerText).join("\n");
+            navigator.clipboard.writeText(phrases).then(() => {
+                alert("Recovery phrases copied to clipboard!");
+            }).catch(err => {
+                console.error("Failed to copy: ", err);
+            });
+        }
+    </script>
+
+</body>
+</html>
